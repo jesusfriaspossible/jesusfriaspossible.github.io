@@ -1,61 +1,101 @@
-<html>
-    <head>
-        <title>Francisco's Portfolio</title>
-        <link rel="stylesheet" href="./css/bootstrap.css">
-        <script src="./js/jquery-3.6.0.js"></script>
-        <script src="./js/bootstrap.js"></script>
-    </head>
-    <body>
-        <div class="jumbotron text-center">
-        <h1>Francisco's Portfolio</h1>
-  		<img src="./bioPic1.JPG" />
-	    </div>
-    </body>
-    <p class="jumbotron text-center mt-2">Welcome to my Portfolio</p>
-    <div>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="https://github.com/jesusfriaspossible/PacMen">
-                    <img src="./pac.png" class="d-block w-100" alt="...">
-                </a>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>PacMen Exercise Repository</h5>
-                  <p>The task in this activity is to create a pacman on demand (button click) and move these pacmen across the page.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <a href="https://github.com/jesusfriaspossible/Eye">
-                    <img src="./Eye.png" class="d-block w-100" alt="...">
-                </a>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Eye Exercise Repository</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <a href="https://github.com/jesusfriaspossible/RealTimeBusTracking">
-                    <img src="./RealTimeBusTracking.png" class="d-block w-100" alt="...">
-                </a>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Real Time Bus Tracking Repository</h5>
-                  <p>Using the MBTA bus data to determine stops between Harvard and MIT and add an animated marker on the map to highlight the bus routes.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <title>Jesús Frías - Software Developer</title>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jesús Frías - Software Developer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+              aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects-container">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#follow-me">Follow me</a>
+                </li>
+              </ul>
+            </div>
           </div>
+        </nav>
+      </header>
+      <div id="body">
+        <div class="who-am-i">
+          <div id="who-am-i">
+            <h3 class="bold">Who am I?</h3>
+            <p id="who-am-i-description">I am a Mechatronics Engineer from Mexico, specializing in software development. In 2019, I established POS Technologies, and just a year later, I founded POSsible. Presently, I work as an AEM consultant at Adobe. 
+            </p>
+          </div>
+          <div class="photo-container">
+            <img class="photo" src="img/bioPic1.JPG" alt="Jesus Frias photo">
+          </div>
+        </div>
+        <div id="video-section">
+          <h3 class="bold">Video Presentation</h3>
+          <h4>Discover me through my video tutorials</h4>
+          <div id="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1l-NEpORjhk?si=jQDbG5acEGqjl7BU"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div id="projects-container">
+          <div class="project-text">
+            <h2 class="center">Projects</h2>
+            <p id="project-description" class="projects-text center">Here are a selection of the tasks I've
+              completed. They're all accessible and can be downloaded from my GitHub repository.</p>
+          </div>
+          <div id="tasks-container">
+            <div id="tasks-container">
+              <div class="task-card"><img class="task-image" src="./img/Eye.png">
+                <h2 class="task-title">Eye movement</h2>
+                <p>This is a task presented by Dr. John Williams in the MITxPRO MERN Course. In this exercise, the eyes follow the cursor as it moves across the screen.</p>
+                <div><a href="https://jesusfriaspossible.github.io/Eye/index.html" class="task-link">Demo</a><a
+                    href="https://github.com/jesusfriaspossible/Eye" class="task-link">Repository</a></div>
+              </div>
+              <div class="task-card"><img class="task-image" src="./img/pac.png">
+                <h2 class="task-title">Pac-Men</h2>
+                <p>An exercise inspired by the concepts taught by Dr. John Williams in the MITxPRO MERN course. It involves creating a Pac-Men character that can navigate around the screen.</p>
+                <div><a href="https://jesusfriaspossible.github.io/PacMen/index.html" class="task-link">Demo</a><a
+                    href="https://github.com/jesusfriaspossible/PacMen" class="task-link">Repository</a></div>
+              </div>
+              <div class="task-card"><img class="task-image" src="./img/RealTimeBusTracking.png">
+                <h2 class="task-title">Real time bus tracker</h2>
+                <p>Live monitoring of the positions of Line 1 buses in Boston. This task was suggested by Dr. Mr. Abel Sanchez. </p>
+                <div><a href="https://jesusfriaspossible.github.io/RealTimeBusTracking/index.html" class="task-link">Demo</a><a
+                    href="https://github.com/jesusfriaspossible/RealTimeBusTracking" class="task-link">Repository</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <h2 class="center">Follow Me</h2>
+        <div id="follow-me">
+          <a href="https://www.linkedin.com/in/jesusfriasmx"> <img class="social-network-image" src="img/LinkedIn.png" alt="">
+          </a>
+        </div>
+      </footer>
     </div>
+  </div>
+</body>
 </html>
